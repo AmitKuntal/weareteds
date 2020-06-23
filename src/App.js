@@ -1,9 +1,13 @@
 import React from 'react';
 import Navbar from './components/navbar';
+import Cards from './components/cards';
 
 function App() {
   return (
-    <Navbar/>
+    <div>
+    <Navbar />
+    <Cards />
+    </div>
   );
 }
 
