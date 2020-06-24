@@ -23,7 +23,7 @@ function CardFull() {
                             <a className="text-blue-700" target="_blank" href="https://instagram.com/micopreset?igshid=dxrj79g3g2am">Mico</a> 
                             will be sharing with us his knowledge and skills about his art of telling stories through colors - his photography journey as well as his techniques in color grading. Join us in this webinar and online discussion with Mico Gonzales.
                         </p>
-                        <p class="text-base px-6 mb-5 md:lg">
+                        <p className="text-base px-6 mb-5 md:lg">
                             <strong>30th May 2020 (Saturday), 9PM (GMT+8)</strong>
                         </p> 
                         <p className="px-6"><a className="bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded shadow-xl py-2 px-4" href="#">Register Now</a></p>
