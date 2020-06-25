@@ -1,10 +1,11 @@
 import React from 'react';
-
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
+import {connect} from 'react-redux';
 
 
-function Footer() {
+
+function Footer(props) {
   return (
         <div className="flex items-center bg-teal-700 p-8 h-full text-lg">
             <div className="container mx-auto flex flex-row items-center" >
@@ -30,4 +31,16 @@ function Footer() {
   );
 }
 
-export default Footer;
+const mapStateToProps =(state)=>{
+    return{
+    }
+  }
+
+const mapDispatchToProps= (dispatch)=>{
+    return{
+        changeName:()=>{dispatch({})}
+    }
+}
+  
+
+export default connect(mapStateToProps,mapDispatchToProps)(Footer);
