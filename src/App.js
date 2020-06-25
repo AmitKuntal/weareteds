@@ -1,15 +1,13 @@
 import React from 'react';
-import Navbar from './components/navbar';
-import Cards from './components/cards';
-import Footer from './components/footer';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
+import Home from './home';
 
 function App() {
   return (
-    <div className="bg-gray-200">
-      <Navbar />
-      <Cards />
-      <Footer />
-    </div>
+    <Router>
+      <Route path="/" exact component={Home}/>
+      <Route path="/index" exact component={Home}/>
+    </Router>
   );
 }
 
