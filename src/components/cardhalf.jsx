@@ -21,6 +21,6 @@ function CardHalf(props) {
         </div>
     </div>
   );
-}
+  }
 
 export default CardHalf;
