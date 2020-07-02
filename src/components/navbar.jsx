@@ -6,6 +6,7 @@ import Login from './login';
 
 
 function Navbar() {
+    
   return (
         <nav className="flex items-center bg-teal-700 p-4 pl-8 pr-8 h-full text-lg">
             <ul className="container mx-auto flex items-center" >
@@ -26,7 +27,7 @@ function Navbar() {
                 </li>
             </ul>
             <div className="pr-8">
-                <Login />
+                <Login/>
             </div> 
         </nav>
   );
