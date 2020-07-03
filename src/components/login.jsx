@@ -6,15 +6,13 @@ import LoginWithEmail from './loginwithemail';
 import SignUpWithEmail from './signupwithemail';
 
 export default function Login() {
-  const [showModal, setShowModal] = React.useState(true);
-  const [modelCount, setModelCount]  = React.useState(3) ;
+  const [showModal, setShowModal] = React.useState(false);
+  const [modelCount, setModelCount]  = React.useState(1) ;
 
   const setModalCount = (count)=>{
-    console.log("Count" +count)
     setModelCount(count)
   }
 
-  console.log(showModal)
   return (
     <>
       <button
