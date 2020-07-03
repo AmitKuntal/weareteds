@@ -1,11 +1,13 @@
 import React from 'react';
+import {connect} from 'react-redux';
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import Login from './login';
+import DropDownMenu from './dropdownmenu';
 
 
-function Navbar() {
+function Navbar(props) {
     
   return (
       <div className="bg-teal-700 flex justify-center">
@@ -28,11 +30,23 @@ function Navbar() {
                 </li>
             </ul>
             <div className="sm:pr-0 md:pr-0 lg-pr-8 xl-pr-8">
-                <Login/>
+               {props.login ? <DropDownMenu />: <Login/>} 
             </div> 
         </nav>
         </div>
   );
 }
 
-export default Navbar;
+const mapStateToProps =(state)=>{
+    return{
+        login:state.login
+    }
+  }
+
+const mapDispatchToProps= (dispatch)=>{
+    return{
+        changeName:()=>{dispatch({})}
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(Navbar);
