@@ -2,7 +2,8 @@ import React from "react";
 
 import SignUp from "./signup";
 import LoginModel from './loginmodel';
-import LoginWithEmail from './loginwithemail'
+import LoginWithEmail from './loginwithemail';
+import SignUpWithEmail from './signupwithemail';
 
 export default function Login() {
   const [showModal, setShowModal] = React.useState(true);
@@ -41,7 +42,8 @@ export default function Login() {
                   </button>
                 {modelCount === 1 ? <LoginModel changeCount ={setModalCount} />:
                  modelCount === 2 ? <SignUp  changeCount ={setModalCount}/>: 
-                 modelCount ===3 ? <LoginWithEmail changeCount = {setModalCount} />: null}
+                 modelCount === 3 ? <LoginWithEmail changeCount = {setModalCount} />: 
+                 modelCount === 4 ? <SignUpWithEmail changeCount= {setModalCount} />:null}
                 
               </div>
             </div>

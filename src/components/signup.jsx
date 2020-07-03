@@ -1,8 +1,7 @@
 import React from "react";
 
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import { faGoogle,faApple, faTwitter, faFacebook, faMailchimp } from "@fortawesome/free-brands-svg-icons";
-import {} from "@fortawesome/fontawesome-svg-core"
+import { faGoogle, faFacebook, faMailchimp } from "@fortawesome/free-brands-svg-icons";
 
 export default function SignUp(props) {
   return (
@@ -20,7 +19,7 @@ export default function SignUp(props) {
                     </button>
                    </div>
                    <div className="mx-8 mt-6">
-                    <button className="w-56 inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black mt-4 lg:mt-0">
+                    <button className="w-56 inline-block text-sm px-4 py-2 leading-none border rounded text-black border-black mt-4 lg:mt-0"  onClick={() => props.changeCount(4)}>
                     <FontAwesomeIcon icon={faMailchimp} color={'black'} size={'lg'} className="mr-2"/>   Sign in with Email
                     </button>
                    </div>
