@@ -1,4 +1,5 @@
 import React from 'react';
+import { faThinkPeaks } from '@fortawesome/free-brands-svg-icons';
 
 function ShareStoryCard() {
   return (
